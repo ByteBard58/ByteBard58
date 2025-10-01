@@ -18,7 +18,7 @@ Currently grinding my way through a full roadmap to master DS + AI while prepari
 - **Languages**: Python, Shell (basic)  
 - **Libraries**: pandas, NumPy, Matplotlib, Seaborn, scikit-learn  
 - **Tools**: Git, GitHub, Jupyter Notebook, VS Code  
-- **Currently Learning**: Supervised ML (Regression, Classification, Decision Trees)
+- **Currently Learning**: Supervised & Unsupervised ML (Regression, Classification, Decision Trees)
 
 Check it out here → [My Data Science + AI Roadmap Repo](https://github.com/ByteBard58/Data-Science-Roadmap)
 
