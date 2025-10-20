@@ -1,8 +1,7 @@
 # Hi, I'm Sakib 👋  
 ### Student | Aspiring Computer Engineer | AI & ML Enthusiast  
 
-Welcome to my GitHub! I'm a high school student from Bangladesh who’s passionate about **Data Science**, **Machine Learning**, and building **real-world automation tools** using Python.  
-Currently grinding my way through a full roadmap to master DS + AI while preparing for higher studies abroad 🎯  
+Welcome to my GitHub! I'm a high school student from Bangladesh who’s passionate about **Data Science**, **Machine Learning**, and building **real-world automation tools** using Python.   
 
 ---
 
@@ -15,12 +14,10 @@ Currently grinding my way through a full roadmap to master DS + AI while prepari
 ---
 
 ### 📚 Skills I'm Building
-- **Languages**: Python, Shell (basic)  
-- **Libraries**: pandas, NumPy, Matplotlib, Seaborn, scikit-learn  
-- **Tools**: Git, GitHub, Jupyter Notebook, VS Code  
-- **Currently Learning**: Supervised & Unsupervised ML (Regression, Classification, Decision Trees)
-
-Check it out here → [My Data Science + AI Roadmap Repo](https://github.com/ByteBard58/Data-Science-Roadmap)
+- **Languages**: Python 
+- **Libraries**: pandas, NumPy, Matplotlib, Seaborn, scikit-learn, torch  
+- **Tools**: Git, GitHub, Jupyter Notebook, VS Code, PyTorch  
+- **Currently Learning**: Supervised & Unsupervised ML (Regression, Classification, Dimensionality Reduction, etc.)
 
 ---
 
