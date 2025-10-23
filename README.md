@@ -35,8 +35,9 @@ Welcome to my GitHub! I'm a high school student from Bangladesh who’s passiona
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bytebard58&show_icons=true&locale=en" alt="bytebard58" /></p>
 
+---
 
-Thanks for stopping by! Have a great day :)
+**Thanks for stopping by! Have a great day :)**
 
 <!---
 ByteBard58/ByteBard58 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
