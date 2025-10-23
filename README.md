@@ -23,7 +23,6 @@ Welcome to my GitHub! I'm a high school student from Bangladesh who’s passiona
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/sakib_al3" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sakib_al3" height="30" width="40" /></a>
 <a href="https://kaggle.com/bytebard101" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="bytebard101" height="30" width="40" /></a>
 <a href="https://instagram.com/tytytf" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="tytytf" height="30" width="40" /></a>
 </p>
