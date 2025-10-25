@@ -42,7 +42,7 @@ I’m a high school student from **Bangladesh** passionate about **Data Science*
 ### 🌐 Connect With Me
 <p align="left">
 <a href="https://kaggle.com/bytebard101" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" width="40" height="30" /></a>
-<a href="https://instagram.com/tytytf" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" width="40" height="30" /></a>
+<a href="https://instagram.com/tytrtf" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" width="40" height="30" /></a>
 </p>
 
 ---
