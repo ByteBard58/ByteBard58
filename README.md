@@ -16,9 +16,13 @@ I’m a high school student from **Bangladesh** passionate about **Data Science*
 
 ### 🧠 Tech Stack
 **Languages:** Python  
+
 **Libraries:** pandas, NumPy, Matplotlib, Seaborn, scikit-learn, PyTorch  
-**Tools:** Git, GitHub, Jupyter Notebook, VS Code  
+
+**Tools:** Git, GitHub, Jupyter Notebook, VS Code, Docker  
+
 **Currently Learning:** Model optimization, dimensionality reduction, and neural networks  
+
 **Learning focus:** model optimization, dimensionality reduction (PCA/LDA), and introductory neural nets
 
 ---
@@ -33,6 +37,7 @@ I’m a high school student from **Bangladesh** passionate about **Data Science*
 <a href="https://scikit-learn.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="40" height="40"/></a>
 <a href="https://pytorch.org/" target="_blank"><img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" width="40" height="40"/></a>
 <a href="https://flask.palletsprojects.com/" target="_blank"><img src="https://flask.palletsprojects.com/en/stable/_images/flask-name.svg" width="40" height="40"/></a>
+<a href="https://www.docker.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" height="40"/></a>
 <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40"/></a>
 <a href="https://code.visualstudio.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40"/></a>
 </p>
@@ -42,6 +47,7 @@ I’m a high school student from **Bangladesh** passionate about **Data Science*
 ### 🌐 Connect With Me
 <p align="left">
 <a href="https://kaggle.com/bytebard101" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" width="40" height="30" /></a>
+<a href="https://hub.docker.com/u/bytebard101" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" height="30" /></a>
 <a href="https://instagram.com/tytrtf" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" width="40" height="30" /></a>
 </p>
 
@@ -57,6 +63,6 @@ I’m a high school student from **Bangladesh** passionate about **Data Science*
 
 ⭐ **“Code, Learn, Repeat.”**  
 
-Thanks for visiting! I hope you enjoy exploring my repositories and experiencing my work. It would mean a lot to me if you could star any of them. 
+Thanks for visiting! I hope you enjoy exploring my repositories and experiencing my work. It would mean a lot to me if you could star any of them.  
 
-**Have a great day !**
+**Have a great day!**
