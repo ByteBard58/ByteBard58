@@ -27,8 +27,9 @@ Welcome to my GitHub!<br>I’m a high school student from Bangladesh passionate 
 ## 📊 GitHub Stats:
 <div align="center">
 
-| ![Contribution Streak](https://nirzak-streak-stats.vercel.app/?user=ByteBard58&theme=merko&hide_border=false) | ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ByteBard58&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact) |
-|---|---|
+![Contribution Streak](https://nirzak-streak-stats.vercel.app/?user=ByteBard58&theme=merko&hide_border=false) 
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ByteBard58&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
 
 </div>
 
