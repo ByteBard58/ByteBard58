@@ -15,7 +15,7 @@ Welcome to my GitHub!<br>I’m a high school student from Bangladesh passionate 
 ---
 
 ## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/tytrtf) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sakib-hossain) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:xy.sakibh@gmail.com)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/tytrtf) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)]([https://linkedin.com/in/sakib-hossain](https://www.linkedin.com/in/sakib-hossain-9b125a390/?trk=nav_responsive_tab_profile_pic&originalSubdomain=bd)) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:xy.sakibh@gmail.com)
 
 ---
 
