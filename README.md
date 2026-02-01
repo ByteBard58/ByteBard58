@@ -5,12 +5,22 @@ Welcome to my GitHub!<br>I’m a high school student from Bangladesh passionate 
 
 ---
 
-## 🚀 What I’m Currently Doing
-- 🔧 Working on hands-on projects using **pandas**, **scikit-learn**, and **PyTorch**
-- 📚 Reading various books related to practical ML and Data Science
+## 🚀 Areas of Interest
+- 🔧 Experience with **pandas**, **scikit-learn**, introductory **PyTorch**
+- 📚 Reading books that are related to practical ML and Data Science
 - 📊 Exploring data analysis, visualization, and ML model development
-- 🎯 Learning supervised and unsupervised ML techniques
+- 🎯 Familiar with supervised and unsupervised ML techniques
 - 🌍 Preparing for undergraduate studies in **Computer Science / AI**
+
+---
+
+## ⚠️ Notice
+
+I’m currently prioritizing my SSC (Secondary School Certificate) examination.
+Because of this, I’ve intentionally paused active Machine Learning project work.
+
+This is a strategic pause, not a shift in interest.
+ML-focused development will resume after SSC with stronger fundamentals.
 
 ---
 
