@@ -1,6 +1,6 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&size=30&duration=4449&pause=1000&color=FECE47&width=435&lines=%F0%9F%91%8B+Hey+there%2C+I'm+Sakib)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&size=30&duration=4449&pause=1800&color=FECE47&width=435&lines=%F0%9F%91%8B+Hey+there%2C+I'm+Sakib)](https://git.io/typing-svg)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4449&pause=1000&color=FECE47&width=700&lines=Student+%E2%80%A2+Aspiring+Computer+Engineer+%E2%80%A2+AI+%26+ML+Enthusiast)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4449&pause=1800&color=FECE47&width=700&lines=Student+%E2%80%A2+Aspiring+Computer+Engineer+%E2%80%A2+AI+%26+ML+Enthusiast)](https://git.io/typing-svg)
 
 
 Welcome to my GitHub!<br>I’m a high school student from Bangladesh passionate about Data Science, Machine Learning, and building real-world automation tools with Python. I love experimenting, analyzing data, and turning raw ideas into functional, well-documented projects.<br><br>
