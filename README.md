@@ -26,8 +26,20 @@ ML-focused development will resume after SSC with stronger fundamentals.
 
 ---
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/tytrtf) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)]([https://linkedin.com/in/sakib-hossain](https://www.linkedin.com/in/sakib-hossain-9b125a390/?trk=nav_responsive_tab_profile_pic&originalSubdomain=bd)) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:xy.sakibh@gmail.com)
+## 🌐 Connect with me
+
+  <a href="https://instagram.com/tytrtf">
+    <img src="https://img.shields.io/badge/Instagram-1f2328?style=for-the-badge&logo=instagram&logoColor=E4405F" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/sakib-hossain-9b125a390">
+    <img src="https://img.shields.io/badge/LinkedIn-1f2328?style=for-the-badge&logo=linkedin&logoColor=0A66C2" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="mailto:xy.sakibh@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-1f2328?style=for-the-badge&logo=gmail&logoColor=EA4335" />
+  </a>
+
 
 ---
 
