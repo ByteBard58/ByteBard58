@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=8AC4DC&center=true&width=435&lines=%F0%9F%91%8B+Hey+there%2C+I'm+Sakib)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=430&size=32&duration=4449&pause=1000&color=8AC4DC&width=435&lines=%F0%9F%91%8B+Hey+there%2C+I'm+Sakib)](https://git.io/typing-svg)
 
 #### Student • Aspiring Computer Engineer • AI & ML Enthusiast
 
