@@ -1,4 +1,5 @@
-# 👋 Hey there, I'm Sakib
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=8AC4DC&center=true&width=435&lines=%F0%9F%91%8B+Hey+there%2C+I'm+Sakib)](https://git.io/typing-svg)
+
 #### Student • Aspiring Computer Engineer • AI & ML Enthusiast
 
 Welcome to my GitHub!<br>I’m a high school student from Bangladesh passionate about Data Science, Machine Learning, and building real-world automation tools with Python. I love experimenting, analyzing data, and turning raw ideas into functional, well-documented projects.<br><br>
