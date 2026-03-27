@@ -37,10 +37,11 @@ ML-focused development will resume after SSC with stronger fundamentals.
 
 ## 📊 GitHub Stats:
 <div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=ByteBard58&theme=kanagawa-paper&hide_border=true&border_radius=7.5)](https://git.io/streak-stats) 
+  
+[![GitHub Streak](https://streak-stats.demolab.com?user=ByteBard58&theme=onedark&border_radius=7.5)](https://git.io/streak-stats)
 
 ![Stats](./profile/stats.svg)
+
 ![Top Languages](./profile/top-langs.svg)
 
 
