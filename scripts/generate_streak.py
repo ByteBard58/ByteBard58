@@ -1,7 +1,7 @@
 import os
 import json
 import urllib.request
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 # Configuration
 USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER")
@@ -55,7 +55,7 @@ def get_user_data():
 
 def get_all_time_contributions(created_at_str):
     created_at = datetime.fromisoformat(created_at_str.replace("Z", "+00:00"))
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     total = 0
     
     # We fetch yearly chunks to get the absolute total
@@ -78,9 +78,9 @@ def get_all_time_contributions(created_at_str):
         """
         # Define the range for the year
         # Start of year or account creation date
-        year_start = max(created_at, datetime(year, 1, 1))
+        year_start = max(created_at, datetime(year, 1, 1, tzinfo=timezone.utc))
         # End of year or now
-        year_end = min(now, datetime(year, 12, 31, 23, 59, 59))
+        year_end = min(now, datetime(year, 12, 31, 23, 59, 59, tzinfo=timezone.utc))
         
         variables = {
             "userName": USERNAME,
@@ -120,8 +120,8 @@ def calculate_streaks(weeks):
     # For current streak, check if today or yesterday had contributions
     # Use the end of the list
     current_streak = 0
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
-    yesterday_str = (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    yesterday_str = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
     
     # Check if the last day is today or yesterday
     last_contrib_day = None
@@ -149,7 +149,7 @@ def calculate_streaks(weeks):
 def generate_svg(total_commits, current_streak, longest_streak, start_date_str):
     # Date formatting
     start_date = datetime.fromisoformat(start_date_str.replace("Z", "+00:00")).strftime("%b %-d, %Y")
-    now_str = datetime.utcnow().strftime("%b %-d, %Y")
+    now_str = datetime.now(timezone.utc).strftime("%b %-d, %Y")
     
     # This matches the layout of the streak-stats.demolab.com
     svg = f"""<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
