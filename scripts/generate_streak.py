@@ -133,7 +133,7 @@ def get_all_time_contributions(created_at_str):
     return total
 
 def calculate_streaks(weeks):
-    """Calculates current and longest streaks from contribution weeks."""
+    """Calculates streaks and their date ranges from contribution weeks."""
     all_days = []
     for week in weeks:
         for day in week["contributionDays"]:
@@ -143,13 +143,23 @@ def calculate_streaks(weeks):
     
     current_streak = 0
     longest_streak = 0
+    
+    longest_streak_start = ""
+    longest_streak_end = ""
+    
     temp_streak = 0
+    temp_start = ""
     
     # Calculate longest streak across history
     for day in all_days:
         if day["contributionCount"] > 0:
+            if temp_streak == 0:
+                temp_start = day["date"]
             temp_streak += 1
-            longest_streak = max(longest_streak, temp_streak)
+            if temp_streak >= longest_streak:
+                longest_streak = temp_streak
+                longest_streak_start = temp_start
+                longest_streak_end = day["date"]
         else:
             temp_streak = 0
             
@@ -157,6 +167,9 @@ def calculate_streaks(weeks):
     now_utc = datetime.now(timezone.utc)
     today_str = now_utc.strftime("%Y-%m-%d")
     yesterday_str = (now_utc - timedelta(days=1)).strftime("%Y-%m-%d")
+    
+    current_streak_start = ""
+    current_streak_end = ""
     
     last_contrib_day = None
     for day in reversed(all_days):
@@ -167,22 +180,42 @@ def calculate_streaks(weeks):
     if last_contrib_day in [today_str, yesterday_str]:
         count = 0
         counting = False
+        current_streak_end = last_contrib_day
         for day in reversed(all_days):
             if day["date"] == last_contrib_day:
                 counting = True
             if counting:
                 if day["contributionCount"] > 0:
                     count += 1
+                    current_streak_start = day["date"]
                 else:
                     break
         current_streak = count
         
-    return current_streak, longest_streak
+    return {
+        "current": {"count": current_streak, "start": current_streak_start, "end": current_streak_end},
+        "longest": {"count": longest_streak, "start": longest_streak_start, "end": longest_streak_end}
+    }
 
-def generate_svg(total_commits, current_streak, longest_streak, start_date_str):
+def format_date_range(start_str, end_str):
+    """Formats a date range string for the SVG."""
+    if not start_str or not end_str:
+        return "No contributions"
+    start_dt = datetime.fromisoformat(start_str)
+    end_dt = datetime.fromisoformat(end_str)
+    
+    # DenverCoder1 style: Omit year if same year
+    if start_dt.year == end_dt.year:
+        return f"{start_dt.strftime('%b %-d')} - {end_dt.strftime('%b %-d')}"
+    return f"{start_dt.strftime('%b %-d, %Y')} - {end_dt.strftime('%b %-d, %Y')}"
+
+def generate_svg(total_commits, current_streak_data, longest_streak_data, start_date_str):
     """Generates the SVG source with specified stats and colors."""
     start_date_obj = datetime.fromisoformat(start_date_str.replace("Z", "+00:00"))
     start_date_fmt = start_date_obj.strftime("%b %-d, %Y")
+    
+    current_range = format_date_range(current_streak_data["start"], current_streak_data["end"])
+    longest_range = format_date_range(longest_streak_data["start"], longest_streak_data["end"])
     
     return f"""<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
                 style='isolation: isolate' viewBox='0 0 495 195' width='495px' height='195px' direction='ltr'>
@@ -215,6 +248,7 @@ def generate_svg(total_commits, current_streak, longest_streak, start_date_str):
                 <line x1='330' y1='28' x2='330' y2='170' vector-effect='non-scaling-stroke' stroke-width='1' stroke='{COLORS["border"]}' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3'/>
             </g>
             
+            <!-- Total Contributions -->
             <g style='isolation: isolate'>
                 <g transform='translate(82.5, 48)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["header"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.6s'>{total_commits}</text>
@@ -227,9 +261,16 @@ def generate_svg(total_commits, current_streak, longest_streak, start_date_str):
                 </g>
             </g>
 
+            <!-- Current Streak -->
             <g style='isolation: isolate'>
+                <g transform='translate(247.5, 48)'>
+                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["label_green"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='animation: currstreak 0.6s linear forwards'>{current_streak_data["count"]}</text>
+                </g>
                 <g transform='translate(247.5, 108)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["label_green"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='14px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.9s'>Current Streak</text>
+                </g>
+                <g transform='translate(247.5, 145)'>
+                    <text x='0' y='21' stroke-width='0' text-anchor='middle' fill='{COLORS["stat"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.9s'>{current_range}</text>
                 </g>
                 <g mask='url(#mask_out_ring_behind_fire)'>
                     <circle cx='247.5' cy='71' r='40' fill='none' stroke='{COLORS["header"]}' stroke-width='5' style='opacity: 0; animation: fadein 0.5s linear forwards 0.4s'></circle>
@@ -237,17 +278,18 @@ def generate_svg(total_commits, current_streak, longest_streak, start_date_str):
                 <g transform='translate(247.5, 19.5)' style='opacity: 0; animation: fadein 0.5s linear forwards 0.6s'>
                     <path d='M 1.5 0.67 C 1.5 0.67 2.24 3.32 2.24 5.47 C 2.24 7.53 0.89 9.2 -1.17 9.2 C -3.23 9.2 -4.79 7.53 -4.79 5.47 L -4.76 5.11 C -6.78 7.51 -8 10.62 -8 13.99 C -8 18.41 -4.42 22 0 22 C 4.42 22 8 18.41 8 13.99 C 8 8.6 5.41 3.79 1.5 0.67 Z M -0.29 19 C -2.07 19 -3.51 17.6 -3.51 15.86 C -3.51 14.24 -2.46 13.1 -0.7 12.74 C 1.07 12.38 2.9 11.53 3.92 10.16 C 4.31 11.45 4.51 12.81 4.51 14.2 C 4.51 16.85 2.36 19 -0.29 19 Z' fill='{COLORS["header"]}'/>
                 </g>
-                <g transform='translate(247.5, 48)'>
-                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["label_green"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='animation: currstreak 0.6s linear forwards'>{current_streak}</text>
-                </g>
             </g>
 
+            <!-- Longest Streak -->
             <g style='isolation: isolate'>
                 <g transform='translate(412.5, 48)'>
-                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["header"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.2s'>{longest_streak}</text>
+                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["header"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.2s'>{longest_streak_data["count"]}</text>
                 </g>
                 <g transform='translate(412.5, 84)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["header"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='14px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.3s'>Longest Streak</text>
+                </g>
+                <g transform='translate(412.5, 114)'>
+                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='{COLORS["stat"]}' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.4s'>{longest_range}</text>
                 </g>
             </g>
         </g>
@@ -267,9 +309,9 @@ def main():
         total_commits = get_all_time_contributions(created_at)
         
         # Streak calculation
-        current_streak, longest_streak = calculate_streaks(user_data["contributionsCollection"]["contributionCalendar"]["weeks"])
+        streaks = calculate_streaks(user_data["contributionsCollection"]["contributionCalendar"]["weeks"])
         
-        svg_content = generate_svg(total_commits, current_streak, longest_streak, created_at)
+        svg_content = generate_svg(total_commits, streaks["current"], streaks["longest"], created_at)
         
         os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
         with open(OUTPUT_PATH, "w") as f:
@@ -277,8 +319,8 @@ def main():
         
         print(f"Success! Generated {OUTPUT_PATH}")
         print(f" - Total Commits: {total_commits}")
-        print(f" - Current Streak: {current_streak}")
-        print(f" - Longest Streak: {longest_streak}")
+        print(f" - Current Streak: {streaks['current']['count']} ({streaks['current']['start']} to {streaks['current']['end']})")
+        print(f" - Longest Streak: {streaks['longest']['count']} ({streaks['longest']['start']} to {streaks['longest']['end']})")
 
     except Exception as e:
         print(f"Error: Automation failed: {e}")
