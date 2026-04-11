@@ -79,7 +79,7 @@ Welcome to my GitHub!<br>I'm a high school student from Bangladesh passionate ab
 
 <div align="center">
   
-[![GitHub Streak](https://streak-stats.demolab.com?user=ByteBard58&theme=onedark&border_radius=7.5)](https://git.io/streak-stats)
+[![GitHub Streak](./profile/streak.svg)](https://git.io/streak-stats)
 
 ![Stats](./profile/stats.svg)
 

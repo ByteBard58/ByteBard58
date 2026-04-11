@@ -38,7 +38,16 @@ jobs:
           options: username=readme-tools&repo=github-readme-stats&theme=onedark
           path: profile/pin-readme-tools-github-readme-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
+      - name: Generate streak card
+        run: python scripts/generate_streak.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
