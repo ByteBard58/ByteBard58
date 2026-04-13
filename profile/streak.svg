@@ -32,7 +32,7 @@
             <!-- Total Contributions -->
             <g style='isolation: isolate'>
                 <g transform='translate(82.5, 48)'>
-                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#e4bf7a' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.6s'>860</text>
+                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#e4bf7a' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.6s'>874</text>
                 </g>
                 <g transform='translate(82.5, 84)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#e4bf7a' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='14px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.7s'>Total Contributions</text>
@@ -45,13 +45,13 @@
             <!-- Current Streak -->
             <g style='isolation: isolate'>
                 <g transform='translate(247.5, 48)'>
-                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#8eb573' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='animation: currstreak 0.6s linear forwards'>20</text>
+                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#8eb573' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='animation: currstreak 0.6s linear forwards'>22</text>
                 </g>
                 <g transform='translate(247.5, 108)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#8eb573' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='14px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.9s'>Current Streak</text>
                 </g>
                 <g transform='translate(247.5, 145)'>
-                    <text x='0' y='21' stroke-width='0' text-anchor='middle' fill='#df6d74' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.9s'>Mar 23 - Apr 11</text>
+                    <text x='0' y='21' stroke-width='0' text-anchor='middle' fill='#df6d74' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' style='opacity: 0; animation: fadein 0.5s linear forwards 0.9s'>Mar 23 - Apr 13</text>
                 </g>
                 <g mask='url(#mask_out_ring_behind_fire)'>
                     <circle cx='247.5' cy='71' r='40' fill='none' stroke='#e4bf7a' stroke-width='5' style='opacity: 0; animation: fadein 0.5s linear forwards 0.4s'></circle>
@@ -64,13 +64,13 @@
             <!-- Longest Streak -->
             <g style='isolation: isolate'>
                 <g transform='translate(412.5, 48)'>
-                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#e4bf7a' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.2s'>20</text>
+                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#e4bf7a' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.2s'>22</text>
                 </g>
                 <g transform='translate(412.5, 84)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#e4bf7a' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='14px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.3s'>Longest Streak</text>
                 </g>
                 <g transform='translate(412.5, 114)'>
-                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#df6d74' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.4s'>Mar 23 - Apr 11</text>
+                    <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#df6d74' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='12px' style='opacity: 0; animation: fadein 0.5s linear forwards 1.4s'>Mar 23 - Apr 13</text>
                 </g>
             </g>
         </g>
