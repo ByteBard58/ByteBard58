@@ -87,16 +87,6 @@ Welcome to my GitHub!<br>I'm a high school student from Bangladesh passionate ab
 
 ---
 
-## ⚠️ Notice
-
-I'm currently prioritizing my SSC (Secondary School Certificate) examination.
-Because of this, I've intentionally paused active Machine Learning project work.
-
-This is a strategic pause, not a shift in interest.
-ML-focused development will resume after SSC with stronger fundamentals.
-
----
-
 ## ⭐ **"Code, Learn, Repeat."**
 Thanks for visiting! I hope you enjoy exploring my repositories and experiencing my work. It would mean a lot to me if you could star any of them.
 **Have a great day!**
